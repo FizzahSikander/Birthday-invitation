@@ -1,0 +1,164 @@
+body {
+    font-family: 'Poppins', 'Roboto';
+    height: 150vh;
+}
+
+header {
+    height: 15vh;
+    background-color: rgb(114, 183, 11);
+    margin: 0;
+    align-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.card__info {
+    font-size: 60px;
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-weight: bold;
+}
+
+.logo {
+    margin-left: 30px;
+    font-size: 60px;
+    font-family: 'Poppins';
+    color: black;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    animation-duration: 10s;
+}
+
+.card__img {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+main {
+    min-height: 150vh;
+    background-image: url(../images/Party-Background-green-with-presents.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main__heading,
+.main__info,
+.end {
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+}
+
+.main__heading {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.main__info,
+.end {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    padding: 20px 20px;
+    justify-content: center;
+}
+
+.card {
+    max-width: 500px;
+    min-height: 600px;
+    background-color: purple;
+    border: none;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.card__img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: imgTurn 3.5s ease infinite;
+    animation-direction: reverse;
+    animation-fill-mode: none;
+
+}
+
+img:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes imgTurn {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(1.1) rotate(15deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.card__info:hover {
+    background-color: aquamarine;
+}
